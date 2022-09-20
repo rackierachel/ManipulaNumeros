@@ -63,7 +63,6 @@ public class Manipulanumeros {
 
     private static void somaImparesMultiplicaPares() { 
         int i;
-        i = ;
         long par = 0;
         int impar = 0;
         

@@ -16,6 +16,7 @@ public class Manipulanumeros {
             System.out.println("1- Maior de 2 números");
             System.out.println("2- Ordenar valores em descrescente");
             System.out.println("3- Soma impares, Multiplica Pares");
+            System.out.println("4- Troca Numero");
             
             
             System.out.println("0- Sair");
@@ -34,6 +35,9 @@ public class Manipulanumeros {
                         NumeroDecrescente.ordenaDecrescente(x);
                     break;
                 case 3: somaImparesMultiplicaPares(); 
+                break;
+                case 4: leValores("Insira um valor","Insira outro valor");
+                TrocaNumero.trocaValoresEntreVariaveis(x,y);
                 break;
                 default: System.out.println("Selecione a opção válida");
             }
@@ -57,18 +61,31 @@ public class Manipulanumeros {
         
     }
 
-    private static void somaImparesMultiplicaPares() {
-       int n1 = 1 ;
-       for (;30<n1; n1++){
-               if(n1%2==1)
-                   System.out.println("Impar: "+n1);
-			System.out.println("Soma de impar: "+(n1+n1));
-			n1 += (n1 / n1);
-			System.out.println("Par: "+n1);
-			System.out.println("Multiplicação de par: "+n1*n1);
-    }
-
-    }
+    private static void somaImparesMultiplicaPares() { 
+        int i;
+        i = ;
+        long par = 0;
+        int impar = 0;
+        
+                
+        for ( i = 0; i < 30; i++ ){
+            if (i%2 == 0){
+                if (i>2){
+                par = par*i;
+                }
+            else{
+            par = i;
+            }
+        }
+        
+        else{
+                impar = impar+i;
+                }
+        
+        }
+        System.out.println("O valor da soma dos números impares é "+impar);
+        System.out.println("A multiplicação dos valores pares é "+ par);
+        } 
 } 
 
 
